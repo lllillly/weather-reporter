@@ -87,6 +87,10 @@ const TodayScreen = () => {
                 setWeatherStatus("비가 오고있어요. 우산은 필수에요");
                 break;
 
+              case "moderate rain":
+                setWeatherStatus("비가 오고 있어요. 우산은 챙기셨나요?");
+                break;
+
               case "rain":
                 setWeatherStatus("비가 오고있어요. 우산은 필수에요");
                 break;
