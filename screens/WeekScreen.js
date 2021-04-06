@@ -3,7 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  Button,
   TouchableOpacity,
   SafeAreaView,
   FlatList,
@@ -17,8 +16,8 @@ const WeekScreen = () => {
   const Item = ({ time, temp }) => {
     return (
       <View style={styles.listBox}>
-        <Text>{time}</Text>
-        <Text>{temp}</Text>
+        <Text style={styles.listText}>{time}</Text>
+        <Text style={styles.listText2}>{`${temp}°C`}</Text>
       </View>
     );
   };
@@ -358,9 +357,27 @@ const styles = StyleSheet.create({
   },
   listBox: {
     width: `100%`,
+    height: 50,
     flexDirection: `row`,
     justifyContent: `space-around`,
+    alignItems: `center`,
     marginBottom: 7,
+    backgroundColor: `#e2d5d5`,
+    opacity: 0.8,
+    marginBottom: 7,
+    borderBottomColor: `#777`,
+    borderBottomWidth: 1,
+  },
+  listText: {
+    fontSize: 24,
+    color: `#865858`,
+    fontWeight: `500`,
+  },
+  listText2: {
+    fontSize: 20,
+    color: `#865858`,
+    opacity: 0.8,
+    fontWeight: `500`,
   },
 });
 

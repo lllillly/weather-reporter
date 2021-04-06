@@ -155,7 +155,7 @@ const TodayScreen = () => {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={[`#E29585`, `#D66D75`, `#E29585`]}
+        colors={[`#E29585`, `#E87D75`, `#E29585`]}
         style={styles.gbox}
       >
         {/* <Text>{location_S && location_S.coords.latitude}</Text>
